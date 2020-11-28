@@ -1,0 +1,6 @@
+Credentials cache: API:6B3287E8-B845-421F-92D3-DBDBBF36CC2F
+        Principal: dlanotte@42ROMA.IT
+
+  Issued                Expires               Principal
+Nov 23 11:04:25 2020  Nov 23 21:04:25 2020  krbtgt/42ROMA.IT@42ROMA.IT
+Nov 23 11:04:26 2020  Nov 23 21:04:25 2020  HTTP/storage.42roma.it@42ROMA.IT
