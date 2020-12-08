@@ -1,0 +1,86 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e4r13p2.42roma.it
+Darwin 18.7.0 x86_64
+$> date
+Fri Dec  4 17:56:00 CET 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42roma.it:exam-2020-12-04/dlanotte_c-piscine-exam-01_exam_16h00m56s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmp8SrgiG/user log --pretty='%H - %an, %ad : %s'
+5389a8a5ca43125957d702e5a6ea73367e947be9 - Exam 42, Fri Dec 4 17:55:51 2020 +0100 : patched single word without space bug
+fb6627b8438e8aa605de77b742b9566049996fbb - Exam 42, Fri Dec 4 17:47:00 2020 +0100 : added last_word
+89b9a0ce6285a629c20392fb61dd786bfd7f3c69 - Exam 42, Fri Dec 4 17:06:49 2020 +0100 : finally i added rot_13
+c6f926c494f8d6c165d5aba5801cbcd7cdcbae46 - Exam 42, Fri Dec 4 16:24:29 2020 +0100 : delete main from rev_print
+6b75f35f0668c064d52e4c67e75481cb35b61ad8 - Exam 42, Fri Dec 4 16:23:06 2020 +0100 : added rev_print
+67c6a458690be2f69dd21fbb345263e95794c1dd - Exam 42, Fri Dec 4 16:05:55 2020 +0100 : added only_z
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp8SrgiG/user
+total 8
+-rw-r--r--  1 root  wheel  1578 Dec  4 17:56 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel    96 Dec  4 17:56 last_word
+drwxr-xr-x  3 root  wheel    96 Dec  4 17:56 only_z
+drwxr-xr-x  3 root  wheel    96 Dec  4 17:56 rev_print
+drwxr-xr-x  3 root  wheel    96 Dec  4 17:56 rot_13
+
+/tmp/tmp8SrgiG/user/last_word:
+total 8
+-rw-r--r--  1 root  wheel  1947 Dec  4 17:56 last_word.c
+
+/tmp/tmp8SrgiG/user/only_z:
+total 8
+-rw-r--r--  1 root  wheel  1011 Dec  4 17:56 only_z.c
+
+/tmp/tmp8SrgiG/user/rev_print:
+total 8
+-rw-r--r--  1 root  wheel  1168 Dec  4 17:56 rev_print.c
+
+/tmp/tmp8SrgiG/user/rot_13:
+total 8
+-rw-r--r--  1 root  wheel  1739 Dec  4 17:56 rot_13.c
+ 
+= last_word ====================================================================
+$> gcc -Wextra -Wall -Werror last_word.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./je9m5f9x421wxqgla3m24l2w 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./vk6xv158q4l8hrep2z62upcr 
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./948u6gzwidpyqwgh0tfk2xjg "salut" "a" "tous" "tout" "le" "monde"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./ylxdj7unf5n5dbm02hvkhal5 "vL8Q"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+--- user_output_test4	2020-12-04 16:56:03.000000000 +0000$
++++ test4.output	2020-12-04 16:56:02.000000000 +0000$
+@@ -0,0 +1 @@$
++vL8Q$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================

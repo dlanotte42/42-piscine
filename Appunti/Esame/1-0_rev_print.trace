@@ -1,0 +1,104 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e3r2p2.42roma.it
+Darwin 18.7.0 x86_64
+$> date
+Fri Dec  4 16:24:44 CET 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42roma.it:exam-2020-12-04/dlanotte_c-piscine-exam-01_exam_16h00m56s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmpuwA6Lv/user log --pretty='%H - %an, %ad : %s'
+c6f926c494f8d6c165d5aba5801cbcd7cdcbae46 - Exam 42, Fri Dec 4 16:24:29 2020 +0100 : delete main from rev_print
+6b75f35f0668c064d52e4c67e75481cb35b61ad8 - Exam 42, Fri Dec 4 16:23:06 2020 +0100 : added rev_print
+67c6a458690be2f69dd21fbb345263e95794c1dd - Exam 42, Fri Dec 4 16:05:55 2020 +0100 : added only_z
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpuwA6Lv/user
+total 8
+-rw-r--r--  1 root  wheel  781 Dec  4 16:24 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Dec  4 16:24 only_z
+drwxr-xr-x  3 root  wheel   96 Dec  4 16:24 rev_print
+
+/tmp/tmpuwA6Lv/user/only_z:
+total 8
+-rw-r--r--  1 root  wheel  1011 Dec  4 16:24 only_z.c
+
+/tmp/tmpuwA6Lv/user/rev_print:
+total 8
+-rw-r--r--  1 root  wheel  1168 Dec  4 16:24 rev_print.c
+ 
+= rev_print ====================================================================
+$> gcc -Wextra -Wall -Werror main.c rev_print.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./lhktxl4b5ebjhns4hoqwqu6i 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./h39pf2qgdv26rf17p10d6hj4 "nf6hKpc4mOzEUZJ"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./hqxm2g3lto3vzdr7mct09fwq "abFtO5yPY0BIE"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./t3auk5o02jpxx4w32a618w8u "fqRV408r"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./fg73pgvflg1rvgzpbegiotb2 "OEudq5XfYLM MzxbEayecnZJ flX3dIF CwMVsOKH4Ym9z VmT8aHy EnyXuq g8nE mev6wsHAozPDSd sBXPJE gRfSkVPW"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./2km63iclnkv6liksw7pnwv7s "BFlRdEgzk506JhYXa GKwsHBjgkdlmJDPY LAUZai GIC3eNFt9JBxT hjkdtnGTAESOgr3"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./w4fag9rygsr5b5qpt7cftqf7 "bx7JU5a casyrUE4BSLQ TH06Efpah5 qWJzcDnrxfV6XObl setUhz80HCO4 0dj jgmzPN2aduie 7Dt9KCsV2l"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./fk358rtmr3benyr6nigeswcs "wRImDlVY2Z" "uhV" "GzjxufSnydR3v84sp" "RUj5q" "bImf" "DjblMdvOTZftuQ" "LlO" "oIJ" "s86lg7Kfvxw0W" "8HOkvRA5Q2uco" "lMG53DAEYhmbf" "HWxdKap" "tpLAfFh8yeT" "tc5kCmBQNlFHSr" "lKBDVUoF" "zE9PYugdXoT"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./y6ag6rcu4uvb5l19co0qcg6y "dxNtRahAK5CpO" "CSxBD" "HPcwEG0ZFxBr" "Fq86mrpvJUyuET" "9FqGjQZreYdT8U"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./7driqq9vae9jvrnpyqzoc0rd "HPhr10L RUezYHXg0qjt6KnS G9Bj4TbQs5oWvuJe CrSO2izNR60D 2dH saEgYKT8zChJjI EkVG1Oz3oX Mj1tbnP9q4lkQgTd v4C1qnfa yV1N7k MbDvcNrCoUm gdaRcw2vQmrP4InA 9zJ WjbZv9gwam5o2O b06uLzXp f8EIPJHDSb" "loTPyd 8eWQhvobCjlHIZP 6MuLKQbmcr98X5 8cKj IwEApB BLlEX2j i5Zrsb71P qpRadzZbDHNFL OgBlEST0GFrx" "vlY05DjHu pcNRUu e8bf2sgn9kV4MEojK vt0OoDLxH4 h5UFs7Op9AIW6m 3MuJHv7xVyq XROCiWKAL DLNT Pu1qbQ2ArI5GTf" "XEYemxhRK76PnOH5Q VcRnH rsDmZ9l40 u1xmeng230r Sv6Y 45lYXHoKpqv 0tDQjd3qRoiOn1 7OIzLS2gkVD ZqM3C8 QNRt7h2jnirEqo mbok3Dt0XZ POTd"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./48bc1yu0uiooppblnogp2fwn "09TixAGZwuL6oO fvTtVFo8u5CKLmq cEajrvg7 CGU FvGZnw9yQMO k951 Ic7zaPk MmsVTBE DrK3R2yFd1xB9hplL vLVj5ZkPz0hR ZMX8HYhb1A iNf0ovbKlLj p1xMzj8EbdrgPn B4T8x" "Il6EWN 4CirtjLB VaZBq VIuaT uBPk2y3Cl CsYLHri5 VHDpSIaX f4xq EXD6yNv1PKTW5 WdVgh3 uatUX2CT QjLBVclONPJn AlsMD1jcuIgk ygOnXUm7p5T" "bapyVC QOD80 PlZ8OEjkx2Gt0owWF ZANdT4yt3jHSV 6MnH41Q AzuClhXSLTW7R UyT Yg0iaFy y6MVlbKt EH4Vo9e2mj6SIGhJk RuC oPME14Fp9A AvhsrE8yl4DO5 lokeVc9vzOFMHSu1" "kLsFZcVETgy749 NO7WynIA puXg0AQf 82BOm0iN61tRwv D0HqXJ5ckL EV8F p4HFMlyCmn6fja0N hAzG6" "YqbUu3RkQDA XF1wsVM B2IPwv0sKcW7ezlNU oUDL8IlRkpEG6 2lZ0Li8F3Sa lBS NzCx9wnj MN6qUIZOeJQ4dT e2K5qbajiu68sGQWR 1OWfyaQsK vTMZ RlEpNa3DVzf1wTy S7XVgr Bd0kCesKbiqtGpDn fzlr YPXWH3vKo4OBdc 9L8WK" "6vpqto5407edOmh APMCKwFNkeY1I np2Rfu6vV1ca0o oSqn0 dtXPr nTBEKkX7SaNit mrvMD05 z1t0dPil4nTmYK6L UiSqImz4jQonyxM BNLYeT6ta RFwg86 ChPT8xVcOI 0lds YclqP7ijQ6oaUfBb" "Ezx 8RgD FyiWArco FdU QY6sEmK3rXz1UA 9YhcU tT1PR7X5squJKlaH Q4kyDYfr2uVH qdQ6aK2I V6zw SgRzJ6DjM xUfA0prKqkGza KaEHbpos05v4Pjd IxigTj1A k3AOJihgsx69MnpPv qyv8zE1X9R6WOAP tJHOxYaUI492WMq Z1r" "cQ7AFIdS dfDNhmqnpY4 sNnVfBwoFS Ks7q6ZzaVRd9jlO"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

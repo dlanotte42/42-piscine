@@ -1,0 +1,110 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e4r3p3.42roma.it
+Darwin 18.7.0 x86_64
+$> date
+Fri Dec  4 17:07:09 CET 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42roma.it:exam-2020-12-04/dlanotte_c-piscine-exam-01_exam_16h00m56s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmp0o28FV/user log --pretty='%H - %an, %ad : %s'
+89b9a0ce6285a629c20392fb61dd786bfd7f3c69 - Exam 42, Fri Dec 4 17:06:49 2020 +0100 : finally i added rot_13
+c6f926c494f8d6c165d5aba5801cbcd7cdcbae46 - Exam 42, Fri Dec 4 16:24:29 2020 +0100 : delete main from rev_print
+6b75f35f0668c064d52e4c67e75481cb35b61ad8 - Exam 42, Fri Dec 4 16:23:06 2020 +0100 : added rev_print
+67c6a458690be2f69dd21fbb345263e95794c1dd - Exam 42, Fri Dec 4 16:05:55 2020 +0100 : added only_z
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp0o28FV/user
+total 8
+-rw-r--r--  1 root  wheel  1049 Dec  4 17:07 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel    96 Dec  4 17:07 only_z
+drwxr-xr-x  3 root  wheel    96 Dec  4 17:07 rev_print
+drwxr-xr-x  3 root  wheel    96 Dec  4 17:07 rot_13
+
+/tmp/tmp0o28FV/user/only_z:
+total 8
+-rw-r--r--  1 root  wheel  1011 Dec  4 17:07 only_z.c
+
+/tmp/tmp0o28FV/user/rev_print:
+total 8
+-rw-r--r--  1 root  wheel  1168 Dec  4 17:07 rev_print.c
+
+/tmp/tmp0o28FV/user/rot_13:
+total 8
+-rw-r--r--  1 root  wheel  1739 Dec  4 17:07 rot_13.c
+ 
+= rot_13 =======================================================================
+$> gcc -Wextra -Wall -Werror rot_13.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./nwx5j28146zoaz4wwucpab1o 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./h4kxuljwsswktsgc545urwsv "sw3iufE2nU7AN8OP0"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./ceufcmy1oqwfcmg9fx7v9k8v "N4cD9EhXsou0"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./6fpqk3r9xpxnqs1tb853rinr "cNfmtF7ZQ4e"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./nc6l24ynggxf2h8s881qbx03 "F1LoMkibSnKtr4 QSnIh34 KvkT9tEohpC8xI OcMgd tfOvDSz2GcHQi 7H8ZljEOKRmDGFn2w 74P1wltj32BMFhLX fLYtNB1PGFcmX 5pXi1e7AoYuKlx sv1DH3V V6WQB2TcC5 B0wvl5ge2 LtavBwqPcW 1kza9G5qMRT lxDUJqZR uk98G6qRe4ZQ5fi jsXqIc0zR"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./j7ev84097ecwg9zzygzobif6 "qku59rexPhtO mBE IJ5PiVZrvxT 7naI FiBWVxmQbE0g lX04Y NpXMOGiPQy t7MGXw wkTz0i4CxYXsad PBtmY5IJjNSy XaJ97Tc2pNYSG6u HKj j1HuQys7G0L pf9 gUyxi7dpseEwn"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./myj55lg9d6cj1nerof8i4k7z "yMt3 xe7NAUL3dt mJKPQ48 sa4NqkZuw m8DPUrfadkB nj8Eu5Owtpv B3E9"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./dio1q3m1d8ybrxx7bba4cbbd "WxGfbJp" "NnMPtG" "jVLplCcr0UGt" "OCYQ8vW2" "k0vPc7ypu" "VeOEcN" "ilYk2tX3" "OjlH" "OquHEIsm" "e6CGHvhWD7xSa" "UE2H3Vea69uImQKo" "d31fEqmXUk" "fHEo0pOh73F2q" "XjfApnd0rQRy" "FpYir0ysxeJI2fO"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./448y0b0xslmdpahfgafkyvuo "jwW9r7ibMNpC" "MmPx34FhSBiRGAv" "BEn7QzZ2D1h" "WuQr7cLzHvwI6kF" "P5jMYftyFS"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./xly7emyjubdkn537njauafpa "oakHwEplF3qziUn GJTyZCPousMEU3QHX 82yB OVv34MRozrwpEUjdY asUO nWcv5Bd XuAjsceKV41Ztbd cBI" "s4w67VnW1bkYf DnkNaJ 0ozH9 4pPWJHVx2 UwWlPLz2O3nesad dPsiKWbO9E3mR tNCEGJyKR4w1D YAyZbWwKEJ48aGf a7UDN8AHvspS sKVoZmfiYvclpJBu FuOfUYDeTbJLKomks RNaECT6sfItQKF7S uAb" "n7FRsXhLaPMCZOA2e jpIgd NnIJozWX2iYk 0wogG zDR5UBtqb Bh4WeSOsA 8Py5kzQuwvgYfN EwfNq0OLkPT5m82Z c8T56LFu7OfhEX3P UjsYOQ0 E7zN alJ9y0Ew x3np6qyGhd4 ePj4qHl2wB5 oPF9 u85Cbhq1V W5kvUGOAfo" "adRTL0D zj8 hA2V8n SKVYW RWMIpDbjmrOSc2gqB lrmIpJoSz y7jq0c23Vh cCsS2Jt0qy9zxR cpAzSvBTFGJ dKcW2fj7FpVUsXSM 0jp7wiKXlDOA"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./io2ppkfv5n0we79963bz4sx4 "Zyk2M8V3NEcSCez e2P mfTFRV1cvGCOxsU HIsuJ1Ac9 b5dlPsKyMOSgGcuW hHw5FqxaLlfMvcR ni1aRmIbNYq2Dljt rvYn7jhQUWxEIy8lc eVaiMvm4GLkbOrFzZ Z1V62LMdziU8 ygl9QACPMdeBZSGfY XO1syEc7l pgGs8xBrn3AfVkF vxFym7ifbg 3EhJN5acyT" "UzZpXVmo8nsA4O nri9cVyECum84AW7S pEA OroEHdvltQaGNj AYKgtucnRhmZC HuWth6m4P xe3dyPRQzwsgiF8H jDvCK5d tmqh4KQoCR ZpxShJ7TQFmejK8L 31k7sCZ RXhTnmF2JNlgtok pavDsJi MkhUxnRXYiObL3D" "FEPSnfwA0HeZWlsV PeBGdMcbyRgWIC OUewKJhoH Big1E4Psmr 0CYZFH9AtKWRSfO7v HfgML7FW" "n7Z Lb9gBMC vFn9BZ rmLXZq7dTF0gcRNl KB3lkHp moj5EAIyCtP4RY 9nZJ0zjdbAfP Rb4O7 9RlHOwrxvhD1PJS xNCEuRWb I0gDpxn2V bzQ7VhPTgC9S w2T9HNBWU3j 1mdueiLWs7To 18UHNokAD 3o4YklIH0MdPS6"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

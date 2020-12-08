@@ -1,0 +1,140 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+e3r3p5.42roma.it
+Darwin 18.7.0 x86_64
+$> date
+Fri Dec  4 18:34:54 CET 2020
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin18.7.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42roma.it:exam-2020-12-04/dlanotte_c-piscine-exam-01_exam_16h00m56s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmpqPR3fZ/user log --pretty='%H - %an, %ad : %s'
+02168f260aa472671463b052810fe92dde1b3110 - Exam 42, Fri Dec 4 18:22:19 2020 +0100 : i HATE moulinette :D
+2f4c3a7588b676784ce96e3178ee84734bc260f3 - Exam 42, Fri Dec 4 18:16:17 2020 +0100 : i hate moulinette :D, maybe i have patched the last problem
+8374f3461decb6052f237732a8c50a152b751dfa - Exam 42, Fri Dec 4 18:09:53 2020 +0100 : patched another bug, maybe
+5389a8a5ca43125957d702e5a6ea73367e947be9 - Exam 42, Fri Dec 4 17:55:51 2020 +0100 : patched single word without space bug
+fb6627b8438e8aa605de77b742b9566049996fbb - Exam 42, Fri Dec 4 17:47:00 2020 +0100 : added last_word
+89b9a0ce6285a629c20392fb61dd786bfd7f3c69 - Exam 42, Fri Dec 4 17:06:49 2020 +0100 : finally i added rot_13
+c6f926c494f8d6c165d5aba5801cbcd7cdcbae46 - Exam 42, Fri Dec 4 16:24:29 2020 +0100 : delete main from rev_print
+6b75f35f0668c064d52e4c67e75481cb35b61ad8 - Exam 42, Fri Dec 4 16:23:06 2020 +0100 : added rev_print
+67c6a458690be2f69dd21fbb345263e95794c1dd - Exam 42, Fri Dec 4 16:05:55 2020 +0100 : added only_z
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpqPR3fZ/user
+total 8
+-rw-r--r--  1 root  wheel  2337 Dec  4 18:34 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel    96 Dec  4 18:34 last_word
+drwxr-xr-x  3 root  wheel    96 Dec  4 18:34 only_z
+drwxr-xr-x  3 root  wheel    96 Dec  4 18:34 rev_print
+drwxr-xr-x  3 root  wheel    96 Dec  4 18:34 rot_13
+
+/tmp/tmpqPR3fZ/user/last_word:
+total 8
+-rw-r--r--  1 root  wheel  2070 Dec  4 18:34 last_word.c
+
+/tmp/tmpqPR3fZ/user/only_z:
+total 8
+-rw-r--r--  1 root  wheel  1011 Dec  4 18:34 only_z.c
+
+/tmp/tmpqPR3fZ/user/rev_print:
+total 8
+-rw-r--r--  1 root  wheel  1168 Dec  4 18:34 rev_print.c
+
+/tmp/tmpqPR3fZ/user/rot_13:
+total 8
+-rw-r--r--  1 root  wheel  1739 Dec  4 18:34 rot_13.c
+ 
+= last_word ====================================================================
+$> gcc -Wextra -Wall -Werror last_word.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./c2d0ur0lgqwt66cuznsokhba 
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./7ezo6uqwoyd48rfefoa3dqfo 
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./fppyqy7up8jjyoao916h4c34 "salut" "a" "tous" "tout" "le" "monde"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./gu5eg3gt4doy3quf7rs1glok "e1r4j6BY"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./mulw3opk1xjiiwayr4gsztjf "MaShoH8bq5LOe"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./kkgxm1zop4or4127qku8v1u0 "Vr32k9XCoA"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./oe0iawkc4h8xvdblwf07b4lh "ViXc02kfpG ORlUF05ZVv37iEGqN XmxHjbBq2L fIiT 129hpnyrI JouOaSV74gW uItBdzv8QpmTnG2 I5QTagPmSGtzlxj 3nsXiT01UYPM2V89w YScD if4OMsBwYIt bfPgxseyAoc w1K3MUb5EX BL82vnkpaQuErjYC sbY wjIVu03J1d mWf5DOsxu AQxLMw"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./0ks2n0wdh12ofk6wxbktq97d "jRCt ahib9QHT AW2PyYVhpokrgnM amJ9TRVchHgNG"
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+= Test 9 ===================================================
+$> ./9r9hovm1bf4z42xxethy8l9t "ciSlOMRagvyI67 Gxca n0BGWxoMqlgje71s EJh UfINpTLloV9aF"
+$> diff -U 3 user_output_test9 test9.output | cat -e
+
+Diff OK :D
+= Test 10 ==================================================
+$> ./i6d5ig9kxjdctuoeh5y3oke1 "7shHj3BSJ5cpdwftR0)"
+$> diff -U 3 user_output_test10 test10.output | cat -e
+
+Diff OK :D
+= Test 11 ==================================================
+$> ./8jsbueo4749fe6hswtc75ca1 " exkP3yWo4CRK6	958YdmGRh2HxEwy.TcICoGgzpAklM/7wqFAh2Ez			:zJqsWV8CKvuI1230k)4ml8Zo  BekSlhDq08BvM5kDLoQUtJpx8"
+$> diff -U 3 user_output_test11 test11.output | cat -e
+
+Diff OK :D
+= Test 12 ==================================================
+$> ./p2een7ku2nleeoo3cwjwygq7 ",89soeTFwg7-WfTN3UpeIYSOPZ	 *j8UaC0JI9dXxkfol8wr5hguycCUoDLbsV(WvwOitRsuJSTa3cbry3FluY93"
+$> diff -U 3 user_output_test12 test12.output | cat -e
+
+Diff OK :D
+= Test 13 ==================================================
+$> ./gkrszr9gn3dly9ajclq10scn ")jQEn7eL 	>pS9gWjH-"
+$> diff -U 3 user_output_test13 test13.output | cat -e
+
+Diff OK :D
+= Test 14 ==================================================
+$> ./lljnycsvxfruu2bo00tuec04 ",BvIHlsnxYruKkJoAC		3CqsBLJ42mxkFVi ;Gktb0p1QRTHxjye6n5t2Fux8.ATn>Xrq7Kq62ftisPOE	0rVI1x2pYN4ym(vUczkMgs=LAK 	;"
+$> diff -U 3 user_output_test14 test14.output | cat -e
+--- user_output_test14	2020-12-04 17:34:58.000000000 +0000$
++++ test14.output	2020-12-04 17:34:58.000000000 +0000$
+@@ -1 +1 @@$
+-0rVI1x2pYN4ym(vUczkMgs=LAK 	;$
++;$
+
+Diff KO :(
+Grade: 0
+
+= Final grade: 0 ===============================================================
